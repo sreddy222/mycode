@@ -9,6 +9,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 /************************************** responsive grid for *********************************/
 /* commond row for all pages*/
 .container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;width:100%}
+.container-full-width{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;width:100%}
 .row{margin-right:-15px;margin-left:-15px}
 .row:after{display:table;content:"";clear:both}/* this will increase row height as per content */
 .header-left, .footer-left{text-align:left}
@@ -18,8 +19,8 @@ footer{margin-top:20px;background:black;padding-bottom:20px;}
 footer .copyrights{border-top:1px solid #222;}
 /* commond grid for all pages*/
 
-	.container{max-width:1180px}/*
-	.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{float: left;}
+	.container{max-width:1180px}
+	.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{float: left;  padding-left: 15px; padding-right: 15px;}
 	.col-lg-12{width: 100%;}
 	.col-lg-11{width: 91.66666667%;}
 	.col-lg-10{width: 83.33333333%;}
@@ -31,8 +32,9 @@ footer .copyrights{border-top:1px solid #222;}
 	.col-lg-4{width: 33.33333333%;}
 	.col-lg-3{width: 25%;}
 	.col-lg-2{width: 16.66666667%;}
-	.col-lg-1{width: 8.33333333%;}*/
-	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{float: left; background:green;}
+	.col-lg-1{width: 8.33333333%;}
+@media (max-width:980px) {
+	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{float: left; padding-left: 15px; padding-right: 15px;}
 	.col-md-12{width: 100%;}
 	.col-md-11{width: 91.66666667%;}
 	.col-md-10{width: 83.33333333%;}
@@ -45,8 +47,9 @@ footer .copyrights{border-top:1px solid #222;}
 	.col-md-3{width: 25%;}
 	.col-md-2{width: 16.66666667%;}
 	.col-md-1{width: 8.33333333%;}
+}
 @media (max-width:800px) {
-	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{float: left; background:#f00;}
+	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{float: left; padding-left: 15px; padding-right: 15px;}
 	.col-sm-12{width: 100%;}
 	.col-sm-11{width: 91.66666667%;}
 	.col-sm-10{width: 83.33333333%;}
@@ -61,8 +64,8 @@ footer .copyrights{border-top:1px solid #222;}
 	.col-sm-1{width: 8.33333333%;}
 }
 @media (max-width:600px) {
-	.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {float: left; }
-	.col-xs-12{ width:100%; background:#efefef;}
+	.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {float: left;  padding-left: 15px; padding-right: 15px;}
+	.col-xs-12{ width:100%;}
 	.col-xs-11{width:91.66666667%;}
 	.col-xs-10{width: 83.33333333%;}
 	.col-xs-9{width: 75%;}
@@ -78,7 +81,7 @@ footer .copyrights{border-top:1px solid #222;}
 @media (max-width:480px) {
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{position: relative; min-height: 1px; padding-left: 15px; padding-right: 15px;}
 .col-xxs-1, .col-xxs-2, .col-xxs-3, .col-xxs-4, .col-xxs-5, .col-xxs-6, .col-xxs-7, .col-xxs-8, .col-xxs-9, .col-xxs-10, .col-xxs-11, .col-xxs-12 {float: left;}
-.col-xxs-12{ width:100%; background:#f00}
+.col-xxs-12{ width:100%;}
 .col-xxs-11{width:91.66666667%;}
 .col-xxs-10{width: 83.33333333%;}
 .col-xxs-9{width: 75%;}
@@ -91,6 +94,8 @@ footer .copyrights{border-top:1px solid #222;}
 .col-xxs-2{width: 16.66666667%;}
 .col-xxs-1{width: 8.33333333%;}
 }
+
+
 /* Ambab custom max width media queries */
 @media(max-width:1179px){
 }
@@ -122,18 +127,126 @@ footer .copyrights{border-top:1px solid #222;}
 .no-padding   { padding:0 !important; }
 .no-bg        { background:none !important; }
 /* Form Elements //*/
+
+
+/*----------------------------------------------------------------------------------------------------
+           only for demo page styles 
+----------------------------------------------------------------------------------------------------*/
+
+h1{ font-size:25px; margin:10px 0px 0px; color:#df474e} 
+h2{ font-size:18px; margin:10px 0px; }
+td,th { border:solid 1px #ccc; padding:5px 25px;} 
+table{ text-align:center; }
+.box{ border:solid 1px #ddd; padding:10px; margin-top:15px;} 
+.footer-bg{ background:#252525; color:#999} 
+
+/*----------------------------------------------------------------------------------------------------
+           only for demo page styles 
+----------------------------------------------------------------------------------------------------*/
 </style> 
 </head>
 
-<body>
+<body class="demo">
 
-<div class="container"> 
+
+
+<div class="container">
+<h1> Diffrence between Bootstrap and Force Grid work </h1>
+<div class="row">  
+<div class=" col-lg-4 col-sm-12 ">
+<h2>Bootstrap grid works</h2>
+
+<table class="sp-post-table">
+<tbody><tr>
+<th>Class Prefix</th>
+<th>Device Size</th>
+</tr>
+<tr>
+<td>.col-xs-</td>
+<td>&lt;768px</td>
+</tr>
+<tr>
+<td>.col-sm-</td>
+<td>768px to 991px</td>
+</tr>
+<tr>
+<td>.col-md-</td>
+<td>992px to 1199px</td>
+</tr>
+<tr>
+<td>.col-lg-</td>
+<td>≥ 1200px</td>
+</tr>
+</tbody></table>
+</div> 
+<div class=" col-lg-8 col-sm-12">
+
+<h2> Ambab Force Grid works</h2>
+
+<table class="sp-post-table">
+<tbody><tr>
+<th>Class Prefix</th>
+<th>Device Size</th>
+</tr>
+<tr>
+<td>.col-xxs-</td>
+<td>&lt;480px</td>
+</tr>
+<tr>
+<td>.col-xs-</td>
+<td>480px -to- 600px</td>
+</tr>
+<tr>
+<td>.col-sm-</td>
+<td>600px -to- 768px</td>
+</tr>
+<tr>
+<td>.col-md-</td>
+<td>  768px  -to- 980px   </td>
+</tr>
+<tr>
+<td>.col-lg-</td>
+<td>  980px -to- ( max-width of container)  </td>
+</tr> 
+</tbody></table>
+</div>
+
+ </div> 
+ <h1> Examples: </h1>  
+<div class="row box">  <h2> Single row  </h2>  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>   
+<div class="row box"> 
+<div class=" col-lg-6 col-md-4 col-sm-12 ">  <h2> col-lg-6 col-md-4 col-sm-12 </h2>  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </div>
+<div class=" col-lg-6 col-md-8 col-sm-12 ">  <h2> col-lg-6 col-md-8 col-sm-12 </h2>  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </div> 
+</div>
+<div class="row box"> 
+<div class=" col-lg-3 col-md-4 col-sm-6  col-xs-12 ">  <h2> col-lg-2  col-md-4 col-sm-6  col-xs-12  </h2>  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknow Ipsum. </div>
+<div class=" col-lg-9 col-md-8 col-sm-6  col-xs-12 ">  <h2>col-lg-10  col-md-8 col-sm-6  col-xs-12  </h2>  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </div> 
+</div>
+
+<div class="row box"> 
+<div class=" col-lg-9   col-sm-9 col-xs-6  col-xxs-12">  <h2> col-lg-9   col-sm-9 col-xs-6  col-xxs-12 </h2>  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </div>
+<div class=" col-lg-3 col-sm-3 col-xs-6  col-xxs-12">  <h2> col-lg-3 col-sm-3 col-xs-6  col-xxs-12 </h2>  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 15. </div> 
+</div>
+</div>
+<div class="container-full-width">
+
+<div class="row box">  <h2> container-full-width   </h2>  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div> 
+
+</div>
+
+<div class="container-full-width footer-bg">
+<div class="container">
 <div class="row"> 
-<div class=" col-md-6 col-sm-12 col-xs-12  col-xxs-12">  loreum ipsum  testing loreum ipsum  testingloreum ipsum  testingloreum ipsum  testingloreum ipsum  testingloreum ipsum  testingloreum ipsum  testingloreum ipsum  testing </div>
-<div class=" col-md-6 col-sm-12 col-xs-12  col-xxs-12">  loreum ipsum  testing loreum ipsum  testingloreum ipsum  testingloreum ipsum  testingloreum ipsum  testingloreum ipsum  testingloreum ipsum  testingloreum ipsum  testing </div> 
- 
 
-<div>  loreum ipsum  testing loreum ipsum  testingloreum ipsum  testingloreum ipsum  testingloreum ipsum  testingloreum ipsum  testingloreum ipsum  testingloreum ipsum  testing </div> 
+<h2> Regular Footer Sample</h2> 
+<div class="col-lg-3 col-sm-6  col-xs-12">  <ul> <li> Lorem Ipsum is simply dummy text of the</li> <li> Lorem Ipsum is simply dummy text of the</li> <li> Lorem Ipsum is simply dummy text of the</li> <li> Lorem Ipsum is simply dummy text of the</li>  </ul> </div> 
+<div class="col-lg-3 col-sm-6 col-xs-12"> <ul> <li> Lorem Ipsum is simply dummy text of the</li> <li> Lorem Ipsum is simply dummy text of the</li> <li> Lorem Ipsum is simply dummy text of the</li> <li> Lorem Ipsum is simply dummy text of the</li>  </ul></div> 
+<div class="col-lg-3 col-sm-6 col-xs-12"> <ul> <li> Lorem Ipsum is simply dummy text of the</li> <li> Lorem Ipsum is simply dummy text of the</li> <li> Lorem Ipsum is simply dummy text of the</li> <li> Lorem Ipsum is simply dummy text of the</li>  </ul></div> 
+<div class="col-lg-3 col-sm-6 col-xs-12"><ul> <li> Lorem Ipsum is simply dummy text of the</li> <li> Lorem Ipsum is simply dummy text of the</li> <li> Lorem Ipsum is simply dummy text of the</li> <li> Lorem Ipsum is simply dummy text of the</li>  </ul>  </div> 
+
+
+</div> 
+</div>
 </div>
 </body>
 </html>
