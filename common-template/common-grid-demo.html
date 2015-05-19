@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="css/styles.css" type="text/css" rel="stylesheet">
+<style>
+
+/*----------  Styles  for Demo Page  ------------*/
+h1         { font-size:23px; margin:10px 0px 0px; color:#df474e;} 
+h2         { font-size:18px; margin:10px 0px; }
+td,th      { border:solid 1px #ccc; padding:5px 25px;} 
+table      { text-align:center; }
+.head      { background:#df474e; margin-bottom:25px; font-weight:bold; border-bottom:5px #efefef solid; }
+.head  h1  {color:#fff; margin:0px; padding:20px 0px; }
+.box       { border:solid 1px #ddd; padding:10px; margin-top:15px;} 
+.footer-bg { background:#252525; color:#999; padding:40px 0px 80px; margin-top:30px;}
+.grey-clr  { color:#ccc} 
+.copyright { padding:20px 0px; color:#777;} 
+/*----------  Styles  for Demo Page  ------------*/
+
+</style> 
+</head>
+
+<body>
+
+<div class="container-full-width head">
+<div class="container">
+<div class="row "> 
+<h1>Force Responsive Grid Demo </h1>
+</div>
+</div>
+</div>
+
+
+<div class="container">
+<h1> Diffrence between Bootstrap and Force Grid work </h1>
+<div class="row">  
+ 
+<div class=" col-lg-5 col-sm-12">
+
+<h2>Force Grid works</h2>
+
+<table class="sp-post-table">
+<tbody><tr>
+<th>Class Prefix</th>
+<th>Device Size</th>
+</tr>
+<tr>
+<td>.col-lg-</td>
+<td>  ( max-width of container) -to- 1024px    </td>
+</tr>
+
+<tr>
+<td>.col-md-</td>
+<td>  1024px  -to- 800px   </td>
+</tr>
+<tr>
+<td>.col-sm-</td>
+<td>800px -to- 600px</td>
+</tr>
+ <tr>
+<td>.col-xs-</td>
+<td>600px -to- 360px</td>
+</tr>
+<tr>
+<td>.col-xxs-</td>
+<td>360px -to- below </td>
+</tr>
+
+</tbody></table>
+</div>
+<div class=" col-lg-7 col-sm-12 ">
+<h2>Bootstrap grid works</h2>
+
+<table class="sp-post-table">
+<tbody><tr>
+<th>Class Prefix</th>
+<th>Device Size</th>
+</tr>
+<tr>
+<td>.col-xs-</td>
+<td>&lt;768px</td>
+</tr>
+<tr>
+<td>.col-sm-</td>
+<td>768px to 991px</td>
+</tr>
+<tr>
+<td>.col-md-</td>
+<td>992px to 1199px</td>
+</tr>
+<tr>
+<td>.col-lg-</td>
+<td>≥ 1200px</td>
+</tr>
+</tbody></table>
+</div>
+
+ </div> 
+ <h1> Examples: </h1> 
+ <h2 class="grey-clr">{ Single Row } </h2> 
+<div class="row box">    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>   
+
+<h2 class="grey-clr">{ Sample Two Coloumns} </h2> 
+
+<div class="row box"> 
+
+<div class=" col-lg-6 col-md-4 col-sm-12 ">  <h2> col-lg-6 col-md-4 col-sm-12 </h2>  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </div>
+<div class=" col-lg-6 col-md-8 col-sm-12 ">  <h2> col-lg-6 col-md-8 col-sm-12 </h2>  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </div> 
+</div>
+<div class="row box"> 
+<div class=" col-lg-3 col-md-4 col-sm-6  col-xs-12 ">  <h2> col-lg-2  col-md-4 col-sm-6  col-xs-12  </h2>  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknow Ipsum. </div>
+<div class=" col-lg-9 col-md-8 col-sm-6  col-xs-12 ">  <h2>col-lg-10  col-md-8 col-sm-6  col-xs-12  </h2>  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </div> 
+</div>
+
+<div class="row box"> 
+<div class=" col-lg-9   col-sm-9 col-xs-6  col-xxs-12">  <h2> col-lg-9   col-sm-9 col-xs-6  col-xxs-12 </h2>  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </div>
+<div class=" col-lg-3 col-sm-3 col-xs-6  col-xxs-12">  <h2> col-lg-3 col-sm-3 col-xs-6  col-xxs-12 </h2>  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 15. </div> 
+</div>
+</div>
+<h2 class="grey-clr"> &nbsp;  &nbsp;  &nbsp;  &nbsp; { Full width  Row } </h2>  
+<div class="container-full-width">
+<div class="row box">  <h2> container-full-width   </h2>  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div> 
+</div>
+
+<h2 class="grey-clr"> &nbsp;  &nbsp;  &nbsp;  &nbsp; { Sample Footer with Four Columns} </h2>   
+<div class="container-full-width footer-bg">
+<div class="container">
+<div class="row"> 
+<h2 class="grey-clr"> Regular Footer Sample</h2> 
+<div class="col-lg-3 col-sm-6  col-xs-12">  <ul> <li> Lorem Ipsum is simply dummy text of the</li> <li> Lorem Ipsum is simply dummy text of the</li> <li> Lorem Ipsum is simply dummy text of the</li> <li> Lorem Ipsum is simply dummy text of the</li>  </ul> </div> 
+<div class="col-lg-3 col-sm-6 col-xs-12"> <ul> <li> Lorem Ipsum is simply dummy text of the</li> <li> Lorem Ipsum is simply dummy text of the</li> <li> Lorem Ipsum is simply dummy text of the</li> <li> Lorem Ipsum is simply dummy text of the</li>  </ul></div> 
+<div class="col-lg-3 col-sm-6 col-xs-12"> <ul> <li> Lorem Ipsum is simply dummy text of the</li> <li> Lorem Ipsum is simply dummy text of the</li> <li> Lorem Ipsum is simply dummy text of the</li> <li> Lorem Ipsum is simply dummy text of the</li>  </ul></div> 
+<div class="col-lg-3 col-sm-6 col-xs-12"><ul> <li> Lorem Ipsum is simply dummy text of the</li> <li> Lorem Ipsum is simply dummy text of the</li> <li> Lorem Ipsum is simply dummy text of the</li> <li> Lorem Ipsum is simply dummy text of the</li>  </ul>  </div> 
+</div> 
+</div>
+</div>
+
+
+<div class="container-full-width">
+<div class="container"> 
+<div class="row"> <p class="a-right copyright">  2015 &copy; With Love Of Responsive Design </p> </div> 
+</div> 
+</div>
+</body>
+</html>

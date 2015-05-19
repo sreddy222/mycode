@@ -1,0 +1,33 @@
+
+
+/* importaed reset css partials*/
+@import 'reset';
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #777;
+$my-bg:#fff;
+$pad-common:15px;
+$margin-mn:20px;
+$my-head:45px;
+$title-color:green;
+
+/* Declared  variables  called*/
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  background:$my-bg;
+  padding-left:$pad-common;
+  margin-top:$margin-mn;
+}
+h1{
+    font-size:$my-head; 
+    color:$title-color;    
+}
+	
+/*nested variables  called*/
+.nested{
+h1{font-size:55px; color:#f00; border-top:solid 1px #ccc; padding-top:$pad-common;}
+p{ color:18px; color:green; }
+}
+
+/*Mixins */
